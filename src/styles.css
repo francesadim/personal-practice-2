@@ -1,6 +1,9 @@
 ul {
   list-style-type: none;
 }
+.row {
+  margin-top: 50px;
+}
 .container {
   border: 0.5px solid black;
   border-radius: 10px;
@@ -16,7 +19,7 @@ ul {
 }
 #temperature {
   margin-top: 80px;
-  text-align: center;
+  margin-left: 42%;
   font-size: 50px;
 }
 #weather-description {
