@@ -17,21 +17,37 @@
       href="https://fonts.googleapis.com/css2?family=Hubballi&family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <link rel="stylesheet" href="src/styles.css" />
   <body>
     <div class="container">
-      <ul>
-        <li id="weather-icon">
-          <img
-            src="https://static.vecteezy.com/system/resources/previews/001/500/512/non_2x/cloudy-weather-icon-free-vector.jpg"
-            alt="#"
-            width="150px"
-          />
-        </li>
-        <li id="temperature"><strong>23°</strong></li>
-        <li id="weather-description">Cloudy</li>
-      </ul>
+      <div class="row">
+        <div class="col-9">
+        <form id="search-form" class="mb-3">
+                <input
+                  type="Search"
+                  placeholder="Enter City"
+                  class= "form-control"
+                  id= "city-input"
+                />
+        </div>
+        <div class="col-3">
+            <input class="btn btn-primary" type="submit" value="Search">
+        </div>
+        </div>
+        <ul>
+          <li id="weather-icon">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/001/500/512/non_2x/cloudy-weather-icon-free-vector.jpg"
+              alt="#"
+              width="150px"
+            />
+          </li>
+          <li><span id="temperature"></span>°F</li>
+          <li id="weather-description"></li>
+        </ul>
+      </div>
     </div>
     <script src="src/app.js"></script>
   </body>
